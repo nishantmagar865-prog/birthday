@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div id="countdown-screen" class="active-section">
+        <h1 class="top-title">Happy Birthday Baby</h1>
+        <div id="timer">00:00:00:00</div>
+        <!-- <p>Waiting for the clock to strike twelve...</p> -->
+    </div>
+
+    <div id="letter-container" class="hidden">
+        <div class="envelope" onclick="openLetter()">
+            <div class="letter-cover">💌</div>
+            <p>You have a message!</p>
+        </div>
+    </div>
+
+    <div id="video-container" class="hidden">
+        <div class="video-wrapper">
+            <video id="birthdayVideo" playsinline controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="gallery-section" class="hidden">
+        <div class="heart-frame" onclick="nextPhoto()">
+            <div class="frame-border">💖💖💖💖💖</div>
+            <img id="current-img" src="img1.jpeg" alt="Memory">
+            <div class="frame-border">💖💖💖💖💖</div>
+        </div>
+        <p>Tap the photo to see more ❤️</p>
+    </div>
+
+    <div id="final-msg" class="hidden">
+        <div class="cake">🎂</div>
+        <h1>Happy Birthday,Baby</h1>
+        <p>Ma sadhai timlai maya gari rakhxu oku i love you so so so much baby mua mua.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
